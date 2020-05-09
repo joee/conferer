@@ -20,7 +20,7 @@ import Conferer.Types
 import Conferer.Provider.Simple
 
 
--- | Create a 'ProviderCreator' for CLIArgs from a argument list
+-- | Create a 'ProviderCreator' for CLIArgs from an argument list
 mkCLIArgsProvider' :: [String] -> ProviderCreator
 mkCLIArgsProvider' args = \config -> do
   let configMap = parseArgsIntoKeyValue args
